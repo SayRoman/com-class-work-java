@@ -12,12 +12,20 @@ public class Blacklist {
         obj.showArray(array);
         System.out.println();
         obj.showArrayOfResults(array);
-
+        String maxMark = "10";
 
     }
 
     public void equalsResult(String maxMark, String [][] array){
-        
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                if (array[i][2].equals(maxMark)){
+                    sout
+                }
+
+            }
+
+        }
     }
 
     public void showArray(String[][] array) {
