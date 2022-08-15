@@ -4,7 +4,7 @@ public class Game {
         GameMap map = new GameMap();
         game.creatMap(map);
         game.addStone(map);
-        game.player(map, 9,0);
+        game.player(map, 9, 0);
         game.showGameArea(map.mapAre);
     }
 
@@ -35,6 +35,10 @@ public class Game {
         map.mapAre[indexX][indexY] = 'P';
     }
 
+
+
+
+
     public void showGameArea(char[][] map) {
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map[i].length; j++) {
@@ -43,4 +47,6 @@ public class Game {
             System.out.println();
         }
     }
+
+
 }
