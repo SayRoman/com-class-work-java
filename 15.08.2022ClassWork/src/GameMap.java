@@ -1,6 +1,5 @@
 public class GameMap {
     char[][] mapAre;
-    Hero hero = new Hero();
 
     public void moveToTheUp() {
         for (int i = 0; i < mapAre.length; i++) {

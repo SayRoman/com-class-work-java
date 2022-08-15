@@ -6,7 +6,7 @@ public class Game {
         Hero hero = new Hero();
         game.creatMap(map);
         game.addStone(map);
-        game.player(map, 9, 0);
+        map.mapAre[hero.x][hero.y];
         game.showGameArea(map.mapAre);
     }
 
