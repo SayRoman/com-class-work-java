@@ -2,6 +2,8 @@ public class Game {
     public static void main(String[] args) {
         Game game = new Game();
         GameMap map = new GameMap();
+        ControlPayer controlPayer = new ControlPayer();
+        Hero hero = new Hero();
         game.creatMap(map);
         game.addStone(map);
         game.player(map, 9, 0);
@@ -26,6 +28,7 @@ public class Game {
                     map.mapAre[i][j] = 'S';
                 } else {
                     map.mapAre[i][j] = '*';
+                    map.mapAre[0][9] = '*';
                 }
             }
         }
@@ -34,9 +37,6 @@ public class Game {
     public void player(GameMap map, int indexX, int indexY) {
         map.mapAre[indexX][indexY] = 'P';
     }
-
-
-
 
 
     public void showGameArea(char[][] map) {

@@ -19,17 +19,23 @@ public class ControlPayer {
         switch (move) {
             case (4): {
                 map.moveToTheLeft();
+                break;
             }
             case (6): {
                 map.moveToTheRight();
+                break;
             }
             case (8): {
                 map.moveToTheUp();
+                break;
             }
             case (2): {
                 map.moveToTheDown();
+                break;
             }
-            default:
+            default: {
+                System.out.print("Вы нажали не верную клавишу");
+            }
         }
     }
 }
