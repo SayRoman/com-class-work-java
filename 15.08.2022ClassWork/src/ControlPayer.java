@@ -4,18 +4,32 @@ import java.io.InputStreamReader;
 
 public class ControlPayer {
     private int getDirection() {
-        int derection = 0;
+        int direction = 0;
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            derection = Integer.parseInt(br.readLine());
+            direction = Integer.parseInt(br.readLine());
         } catch (IOException ex) {
             System.out.println("Ошибка ввода");
         }
-        return derection;
+        return direction;
     }
 
     public void navigationPayer(GameMap map) {
-        getDirection();
-
+        int move = getDirection();
+        switch (move) {
+            case (4): {
+                map.moveToTheLeft();
+            }
+            case (6): {
+                map.moveToTheRight();
+            }
+            case (8): {
+                map.moveToTheUp();
+            }
+            case (2): {
+                map.moveToTheDown();
+            }
+            default:
+        }
     }
 }
