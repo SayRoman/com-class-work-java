@@ -1,10 +1,5 @@
 public class Task0 {
-    /* *********
-     *
-     *       *
-     *       *
-     * *******
-     */
+
     char[][] arrayPlayPlace = new char[10][10];
 
     public static void main(String[] args) {
@@ -12,6 +7,11 @@ public class Task0 {
 
         obj.createPlayPlace();
         obj.showArray();
+    }
+
+    public void creatRandomNumber(){
+        int [][] arrayNumber = new int[10][10];
+
     }
 
     public void createPlayPlace() {
