@@ -12,8 +12,8 @@ public class Game {
         game.addStone(map);
 
         game.player(map, hero);
+        map.showGameArea(map.mapAre);
         do {
-            System.out.println("We are here");
             controlPayer.navigationPayer(map, hero);
         }
         while (hero.y != 9 || hero.x != 0);

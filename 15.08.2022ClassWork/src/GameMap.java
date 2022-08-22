@@ -12,59 +12,42 @@ public class GameMap {
     }
 
     public void moveToTheUp(Hero hero) {
-        mapAre[hero.x][hero.y] = '*';
-        hero.x = hero.x - 1;
-        if (mapAre[hero.x][hero.y] == '*') {
-            mapAre[hero.x][hero.y] = 'P';
+        if ( hero.x-1 < 0  || mapAre[hero.x-1] [hero.y] == 'S') {
+            System.out.println("Нет возможности передвижения");
         } else {
-            mapAre[hero.x + 1][hero.y] = 'P';
-            hero.x = hero.x + 1;
-            System.out.print("Нет возможности передвижения");
-        }
-        System.out.println();
+            mapAre[hero.x-1][hero.y] = 'P';
+            mapAre[hero.x][hero.y] = '*';
+            hero.x--;}
     }
 
     public void moveToTheDown(Hero hero) {
-        mapAre[hero.x][hero.y] = '*';
-        hero.x = hero.x + 1;
-        if (mapAre[hero.x][hero.y] == '*') {
-            mapAre[hero.x][hero.y] = 'P';
+        if ( hero.x+1 > 9  || mapAre[hero.x+1] [hero.y] == 'S') {
+            System.out.println("Нет возможности передвижения");
         } else {
-            mapAre[hero.x - 1][hero.y] = 'P';
-            hero.x = hero.x - 1;
-            System.out.print("Нет возможности передвижения");
-        }
-        System.out.println();
+            mapAre[hero.x+1][hero.y] = 'P';
+            mapAre[hero.x][hero.y] = '*';
+            hero.x++;}
 
     }
 
     public void moveToTheRight(Hero hero) {
-        mapAre[hero.x][hero.y] = '*';
-        hero.y = hero.y + 1;
-        if (mapAre[hero.x][hero.y] == '*') {
-            mapAre[hero.x][hero.y] = 'P';
+        if ( hero.y+1 > 9  || mapAre[hero.x] [hero.y + 1] == 'S') {
+            System.out.println("Нет возможности передвижения");
         } else {
-            mapAre[hero.x][hero.y-1] = 'P';
-            hero.y = hero.y - 1;
-            System.out.print("Нет возможности передвижения");
-        }
-        System.out.println();
+            mapAre[hero.x][hero.y +1 ] = 'P';
+            mapAre[hero.x][hero.y] = '*';
+            hero.y++;}
 
     }
 
     public void moveToTheLeft(Hero hero) {
-        mapAre[hero.x][hero.y] = '*';
-        hero.y = hero.y - 1;
-        if (mapAre[hero.x][hero.y] == '*') {
-            mapAre[hero.x][hero.y] = 'P';
+        if ( hero.y-1 < 0  || mapAre[hero.x] [hero.y - 1] == 'S') {
+            System.out.println("Нет возможности передвижения");
         } else {
-            mapAre[hero.x][hero.y + 1] = 'P';
-            hero.y = hero.y + 1;
-            System.out.print("Нет возможности передвижения");
+            mapAre[hero.x][hero.y -1 ] = 'P';
+            mapAre[hero.x][hero.y] = '*';
+            hero.y--;
         }
-        System.out.println();
-
-
     }
 }
 

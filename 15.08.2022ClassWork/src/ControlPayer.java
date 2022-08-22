@@ -16,7 +16,7 @@ public class ControlPayer {
     }
 
     public void navigationPayer(GameMap map, Hero hero) {
-        map.showGameArea(map.mapAre);
+
         int move = getDirection();
         switch (move) {
             case (4): {
