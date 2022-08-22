@@ -3,6 +3,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ControlPayer {
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_RESET = "\u001B[0m";
 
     private int getDirection() {
         int direction = 0;
@@ -10,7 +12,7 @@ public class ControlPayer {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             direction = Integer.parseInt(br.readLine());
         } catch (IOException ex) {
-            System.out.println("Ошибка ввода");
+            System.out.println(ANSI_RED + "Ошибка ввода" + ANSI_RESET);
         }
         return direction;
     }
@@ -40,7 +42,7 @@ public class ControlPayer {
                 break;
             }
             default: {
-                System.out.print("Вы нажали не верную клавишу");
+                System.out.print(ANSI_RED + "Вы нажали не верную клавишу" + ANSI_RESET);
             }
         }
     }
