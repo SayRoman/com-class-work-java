@@ -8,6 +8,7 @@ public class Game {
 
         Hero hero = new Hero();
 
+
         game.creatMap(map);
         game.addStone(map);
 
@@ -18,8 +19,11 @@ public class Game {
         }
         while (hero.y != 9 || hero.x != 0);
         System.out.println();
-        System.out.print("You win");
+        System.out.print(ANSI_GREEN + "You win" + ANSI_RESET);
     }
+
+    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_RESET = "\u001B[0m";
 
     public void creatMap(GameMap map) {
         map.mapAre = new char[10][10];
@@ -48,7 +52,6 @@ public class Game {
     public void player(GameMap map, Hero hero) {
         map.mapAre[hero.x][hero.y] = 'P';
     }
-
 
 
 }
