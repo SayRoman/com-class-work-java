@@ -12,7 +12,7 @@ public class ControlPayer {
         try {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             direction = Integer.parseInt(br.readLine());
-        } catch (IOException ex) {
+        } catch (Exception ex) {
             System.out.println(ANSI_RED + "Ошибка ввода" + ANSI_RESET);
         }
         return direction;
