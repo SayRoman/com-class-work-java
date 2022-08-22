@@ -25,7 +25,7 @@ public class GameMap {
     }
 
     public void moveToTheDown(Hero hero) {
-        if (hero.x + 1 > 19 || mapAre[hero.x + 1][hero.y] == 'S') {
+        if (hero.x + 1 > 9 || mapAre[hero.x + 1][hero.y] == 'S') {
             System.out.println(ANSI_RED + "Нет возможности передвижения" + ANSI_RESET);
         } else {
             mapAre[hero.x + 1][hero.y] = 'P';
@@ -36,7 +36,7 @@ public class GameMap {
     }
 
     public void moveToTheRight(Hero hero) {
-        if (hero.y + 1 > 19 || mapAre[hero.x][hero.y + 1] == 'S') {
+        if (hero.y + 1 > 9 || mapAre[hero.x][hero.y + 1] == 'S') {
             System.out.println(ANSI_RED + "Нет возможности передвижения" + ANSI_RESET);
         } else {
             mapAre[hero.x][hero.y + 1] = 'P';

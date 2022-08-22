@@ -26,7 +26,7 @@ public class Game {
     public static final String ANSI_RESET = "\u001B[0m";
 
     public void creatMap(GameMap map) {
-        map.mapAre = new char[20][20];
+        map.mapAre = new char[10][10];
         for (int i = 0; i < map.mapAre.length; i++) {
             for (int j = 0; j < map.mapAre[i].length; j++) {
                 map.mapAre[i][j] = '.';
@@ -39,14 +39,28 @@ public class Game {
         for (int i = 0; i < map.mapAre.length; i++) {
             for (int j = 0; j < map.mapAre[i].length; j++) {
                 map.mapAre[i][j] = (char) (Math.random() * 100);
-                if (map.mapAre[i][j] >= 80) {
+                if (map.mapAre[i][j] >= 50) {
                     map.mapAre[i][j] = 'S';
                 } else {
                     map.mapAre[i][j] = '.';
-                    map.mapAre[18][0] = '.';
-                    map.mapAre[18][1] = '.';
-                    map.mapAre[19][1] = '.';
-                    map.mapAre[0][19] = '.';
+                    map.mapAre[8][0] = '.';
+                    map.mapAre[8][1] = '.';
+                    map.mapAre[7][1] = '.';
+                    map.mapAre[7][2] = '.';
+                    map.mapAre[6][2] = '.';
+                    map.mapAre[6][3] = '.';
+                    map.mapAre[5][3] = '.';
+                    map.mapAre[5][4] = '.';
+                    map.mapAre[4][4] = '.';
+                    map.mapAre[4][5] = '.';
+                    map.mapAre[3][5] = '.';
+                    map.mapAre[3][6] = '.';
+                    map.mapAre[2][6] = '.';
+                    map.mapAre[2][7] = '.';
+                    map.mapAre[1][7] = '.';
+                    map.mapAre[1][8] = '.';
+                    map.mapAre[0][8] = '.'; 
+                    map.mapAre[0][9] = '.';
                 }
             }
         }
