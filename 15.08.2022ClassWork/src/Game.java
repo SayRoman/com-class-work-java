@@ -1,13 +1,24 @@
 public class Game {
     public static void main(String[] args) {
         Game game = new Game();
+
         GameMap map = new GameMap();
+
         ControlPayer controlPayer = new ControlPayer();
+
         Hero hero = new Hero();
+
         game.creatMap(map);
         game.addStone(map);
-        map.mapAre[hero.x][hero.y];
-        game.showGameArea(map.mapAre);
+
+        game.player(map, hero);
+        do {
+            System.out.println("We are here");
+            controlPayer.navigationPayer(map, hero);
+        }
+        while (hero.y != 9 || hero.x != 0);
+        System.out.println();
+        System.out.print("You win");
     }
 
     public void creatMap(GameMap map) {
@@ -34,19 +45,10 @@ public class Game {
         }
     }
 
-    public void player(GameMap map, int indexX, int indexY) {
-        map.mapAre[indexX][indexY] = 'P';
+    public void player(GameMap map, Hero hero) {
+        map.mapAre[hero.x][hero.y] = 'P';
     }
 
-
-    public void showGameArea(char[][] map) {
-        for (int i = 0; i < map.length; i++) {
-            for (int j = 0; j < map[i].length; j++) {
-                System.out.print(map[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
 
 
 }

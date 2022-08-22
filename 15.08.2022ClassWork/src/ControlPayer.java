@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class ControlPayer {
+
     private int getDirection() {
         int direction = 0;
         try {
@@ -14,23 +15,28 @@ public class ControlPayer {
         return direction;
     }
 
-    public void navigationPayer(GameMap map) {
+    public void navigationPayer(GameMap map, Hero hero) {
+        map.showGameArea(map.mapAre);
         int move = getDirection();
         switch (move) {
             case (4): {
-                map.moveToTheLeft();
+                map.moveToTheLeft(hero);
+                map.showGameArea(map.mapAre);
                 break;
             }
             case (6): {
-                map.moveToTheRight();
+                map.moveToTheRight(hero);
+                map.showGameArea(map.mapAre);
                 break;
             }
             case (8): {
-                map.moveToTheUp();
+                map.moveToTheUp(hero);
+                map.showGameArea(map.mapAre);
                 break;
             }
             case (2): {
-                map.moveToTheDown();
+                map.moveToTheDown(hero);
+                map.showGameArea(map.mapAre);
                 break;
             }
             default: {
