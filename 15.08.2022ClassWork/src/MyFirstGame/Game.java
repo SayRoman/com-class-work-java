@@ -1,3 +1,5 @@
+package MyFirstGame;
+
 public class Game {
     public static void main(String[] args) {
         Game game = new Game();
@@ -59,7 +61,7 @@ public class Game {
                     map.mapAre[2][7] = '.';
                     map.mapAre[1][7] = '.';
                     map.mapAre[1][8] = '.';
-                    map.mapAre[0][8] = '.'; 
+                    map.mapAre[0][8] = '.';
                     map.mapAre[0][9] = '.';
                 }
             }
