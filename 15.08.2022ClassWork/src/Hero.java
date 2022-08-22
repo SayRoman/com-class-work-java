@@ -1,4 +1,4 @@
 public class Hero {
-    int x = 9;
+    int x = 19;
     int y = 0;
 }

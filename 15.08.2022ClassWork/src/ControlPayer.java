@@ -6,6 +6,7 @@ public class ControlPayer {
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
 
+
     private int getDirection() {
         int direction = 0;
         try {
