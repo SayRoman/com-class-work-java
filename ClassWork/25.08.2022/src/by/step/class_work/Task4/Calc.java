@@ -1,29 +1,21 @@
 package by.step.class_work.Task4;
 
-import java.util.Scanner;
 
 public class Calc {
-    private Scanner sc = new Scanner(System.in);
-    private double numerator = 0.0d;
-    private double denominator = 0.0d;
 
-    public double getNumerator() {
-        return numerator;
+    public double plus(double x, double y) {
+        return x + y;
     }
 
-    public void setNumerator() {
-        System.out.print("Введите числитель: ");
-        this.numerator = sc.nextDouble();
+    public double minus (double x, double y) {
+        return x - y;
     }
 
-    public double getDenominator() {
-        return denominator;
+    public double multiply(double x, double y) {
+        return x * y;
     }
 
-    public void setDenominator() {
-        System.out.println("Введите знаменатель: ");
-        this.denominator = sc.nextDouble();
+    public double divide (double x, double y) {
+        return x / y;
     }
-
-
 }
