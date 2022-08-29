@@ -25,7 +25,7 @@ public class MainClass {
         cities[1] = new City("Mogilev", "Mog", "Belarus");
         cities[2] = new City("Minsk", "Mincsk", "Belarus");
 
-        Country Belarus = new Country("Belarus", "Evrazia", 1, 375, "Minsk", "Vitebsk, Minsk, Mogilev", cities);
+        Country belarus = new Country("Belarus", "Evrazia", 1, 375, "Minsk", "Vitebsk, Minsk, Mogilev", cities);
 
     }
 }
