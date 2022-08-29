@@ -2,7 +2,8 @@ package by.step.class_work.Task1;
 
 import java.util.Scanner;
 
-public class Person {
+public class Person  {
+
 
     private Scanner sc = new Scanner(System.in);
 
@@ -38,7 +39,7 @@ public class Person {
     }
 
     public void setNameFather() {
-        System.out.print("Введите отчество: ");
+        System.out.print("Введите Отчество: ");
         this.nameFather = sc.nextLine();
     }
 
