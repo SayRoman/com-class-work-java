@@ -27,5 +27,6 @@ public class MainClass {
 
         Country belarus = new Country("Belarus", "Evrazia", 1, 375, "Minsk", "Vitebsk, Minsk, Mogilev", cities);
 
+        System.out.println(belarus.toString());
     }
 }

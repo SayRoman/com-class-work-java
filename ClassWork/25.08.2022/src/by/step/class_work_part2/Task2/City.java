@@ -2,6 +2,8 @@ package by.step.class_work_part2.Task2;
 
 import by.step.class_work_part2.Task1.Person;
 
+import java.util.Arrays;
+
 public class City {
 
 
@@ -28,4 +30,16 @@ public class City {
         this.populationPerson = populationPerson;
     }
 
+    @Override
+    public String toString() {
+        return "City{" +
+                "nameCity='" + nameCity + '\'' +
+                ", nameRegion='" + nameRegion + '\'' +
+                ", nameCountry='" + nameCountry + '\'' +
+                ", population=" + population +
+                ", postCode=" + postCode +
+                ", phoneCode=" + phoneCode +
+                ", populationPerson=" + Arrays.toString(populationPerson) +
+                '}';
+    }
 }

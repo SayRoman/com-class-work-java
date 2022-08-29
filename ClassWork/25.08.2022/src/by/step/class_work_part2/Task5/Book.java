@@ -18,4 +18,16 @@ public class Book {
         this.genre = genre;
         this.countPage = countPage;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "nameBook='" + nameBook + '\'' +
+                ", fioAuthor='" + fioAuthor + '\'' +
+                ", yearProduction='" + yearProduction + '\'' +
+                ", nameCompany='" + nameCompany + '\'' +
+                ", genre='" + genre + '\'' +
+                ", countPage=" + countPage +
+                '}';
+    }
 }

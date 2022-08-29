@@ -13,4 +13,14 @@ public class Car {
         this.yearBuild = yearBuild;
         this.volumeEngine = volumeEngine;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "nameCar='" + nameCar + '\'' +
+                ", nameCompany='" + nameCompany + '\'' +
+                ", yearBuild=" + yearBuild +
+                ", volumeEngine=" + volumeEngine +
+                '}';
+    }
 }

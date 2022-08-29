@@ -2,6 +2,7 @@ package by.step.class_work_part2.Task3;
 
 import by.step.class_work_part2.Task2.City;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Country {
@@ -30,5 +31,18 @@ public class Country {
         this.capital = capital;
         this.namesCites = namesCites;
         this.countCities = countCities;
+    }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "nameCountry='" + nameCountry + '\'' +
+                ", nameContinent='" + nameContinent + '\'' +
+                ", population=" + population +
+                ", phoneCode=" + phoneCode +
+                ", capital='" + capital + '\'' +
+                ", namesCites='" + namesCites + '\'' +
+                ", countCities=" + Arrays.toString(countCities) +
+                '}';
     }
 }

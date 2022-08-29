@@ -3,6 +3,8 @@ package by.step.class_work_part2.Task1;
 import by.step.class_work_part2.Task5.Book;
 import by.step.class_work_part2.Task6.Car;
 
+import java.util.Arrays;
+
 public class Person {
 
     private String lastName;
@@ -38,6 +40,20 @@ public class Person {
         this.countCar = countCar;
     }
 
-
+    @Override
+    public String toString() {
+        return "Person{" +
+                "lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", nameFather='" + nameFather + '\'' +
+                ", dateBirthday='" + dateBirthday + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                ", adres='" + adres + '\'' +
+                ", countBook=" + Arrays.toString(countBook) +
+                ", countCar=" + Arrays.toString(countCar) +
+                '}';
+    }
 }
 
