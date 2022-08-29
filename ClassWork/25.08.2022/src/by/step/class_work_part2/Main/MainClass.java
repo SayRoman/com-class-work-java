@@ -2,6 +2,7 @@ package by.step.class_work_part2.Main;
 
 import by.step.class_work_part2.Task1.Person;
 import by.step.class_work_part2.Task2.City;
+import by.step.class_work_part2.Task3.Country;
 import by.step.class_work_part2.Task5.Book;
 import by.step.class_work_part2.Task6.Car;
 
@@ -15,8 +16,13 @@ public class MainClass {
         Car [] cars = new Car[1];
         Car car1 = new Car("Audi", "GeneralMotors", 1989,1.6);
 
-        City [] population = new City[1];
-        Person person1 = new Person("Roman", "Kornyshev", "Valerievich", "8 december 1989", "292111972", "Vitebsk", "Belarus", "Pr. Pobedy", books, cars);
+        Person [] population = new Person[1];
+        Person person1 = new Person("Roman", "Kornyshev", "Valerievich", "8 december 1989",
+                "292111972", "Vitebsk", "Belarus", "Pr. Pobedy", books, cars);
 
+        City [] cities = new City[3];
+        City city1 = new City("Vitebsk", "Vitebskaya oblast'", "Belarus", 1, 233222, 212,population);
+
+        Country Belarus = new Country("Belarus", "Evrazia", 1, 375, "Minsk", "Vitebsk, Minsk, Mogilev",cities);
     }
 }
