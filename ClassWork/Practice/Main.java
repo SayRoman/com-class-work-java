@@ -1,4 +1,4 @@
-package Practice22092022;
+package Practice;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class Main {
         City city = new City("Vitebsk", 300000);
         City city2 = new City("Mogilev", 350000);
         City city3 = new City("Minsk", 135000);
- 
+
         System.out.println(country.toString() + city.toString());
         System.out.println(country2.toString() + city2.toString());
         System.out.println(country3.toString() + city3.toString());

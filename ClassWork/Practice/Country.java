@@ -1,4 +1,4 @@
-package Practice22092022;
+package Practice;
 
 import java.util.Objects;
 
