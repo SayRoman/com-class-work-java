@@ -1,6 +1,9 @@
 package Annotation;
 
 import java.lang.annotation.Annotation;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
 
 @AnnotationPractice("Begin")
 @AnnotationPractice("Close")
@@ -29,6 +32,6 @@ public class Main {
     }
 
     public static boolean isAnnotationPresent () {
-        return Main.class.isAnnotationPresent(AnnotationPractice.class);
+        return Main.class.isAnnotationPresent(RepAnno.class);
     }
 }
