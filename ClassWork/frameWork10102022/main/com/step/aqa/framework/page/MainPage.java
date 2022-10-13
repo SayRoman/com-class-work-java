@@ -4,6 +4,9 @@ import com.step.aqa.framework.annotation.Page;
 import com.step.aqa.framework.page.block.TopMenuBlock;
 import com.step.aqa.framework.page.block.leftMenu.FooterLeftMenuBlock;
 import com.step.aqa.framework.page.block.leftMenu.HeaderLeftMenuBlock;
+import com.step.aqa.framework.page.block.leftMenu.NavigationLeftMenuBlock;
+import com.step.aqa.framework.page.block.main.EventBlock;
+import com.step.aqa.framework.page.block.main.NewsBlock;
 import com.step.aqa.framework.page.block.present.NavigationBlock;
 import com.step.aqa.framework.page.block_interface.HasTopMenuBlock;
 import com.step.aqa.framework.page.block_interface.left_menu.HasFooterLeftMenuBlock;
@@ -17,6 +20,8 @@ public class MainPage extends BasePage implements HasTopMenuBlock, HasFooterLeft
     private FooterLeftMenuBlock footerLeftMenuBlock = new FooterLeftMenuBlock();
     private HeaderLeftMenuBlock headerLeftMenuBlock = new HeaderLeftMenuBlock();
     private NavigationBlock navigationBlock = new NavigationBlock();
+    private EventBlock eventBlock = new EventBlock();
+    private NewsBlock newsBlock = new NewsBlock();
 
 
     @Override
@@ -35,7 +40,11 @@ public class MainPage extends BasePage implements HasTopMenuBlock, HasFooterLeft
     }
 
     @Override
-    public NavigationBlock getNavigationLeftMenuBlock() {
-        return navigationBlock;
+    public NavigationLeftMenuBlock getNavigationLeftMenuBlock() {
+        return getNavigationLeftMenuBlock();
     }
+
+    public EventBlock getEvenBlock() {return eventBlock;};
+
+    public NewsBlock getNewsBlock() {return newsBlock;};
 }
