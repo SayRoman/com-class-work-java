@@ -35,7 +35,7 @@ public class LoginPageTest {
     }
 
     public void checkLanguageElement(){
-        loginPageService.getLoginPage().getLanguageBlock().getLanguageElement();
+        loginPageService.getLoginPage().getLanguageBlock().showLanguageElementSelector();
     }
 
     public void checkTitleLanguageElement(){
