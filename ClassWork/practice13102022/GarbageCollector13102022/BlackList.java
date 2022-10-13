@@ -1,4 +1,4 @@
-package GarbageCollector13102022;
+package practice13102022.GarbageCollector13102022;
 
 
 
