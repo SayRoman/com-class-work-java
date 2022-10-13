@@ -1,13 +1,21 @@
 package practice13102022.packing;
 
 public class Main {
+
+
+
     public static void main(String[] args) {
-        Integer i1 = 10;
-        Integer i2 = Integer.valueOf("10");
-        System.out.println(i1 == i2);
-        System.out.println(i1.equals(i2));
-        System.out.println(i1.compareTo(i2));
+
+        Number1 number1 = new Number1();
+        Number2 number2 = new Number2();
+        NotNumber notNumber = new NotNumber();
+
+        System.out.println(number1.i1 == number2.i2);
+        System.out.println(number1.i1.equals(number2.i2));
+        System.out.println(number1.i1.compareTo(number2.i2));
+        System.out.println(number2.i2.compareTo(notNumber.i3));
     }
+
 
 
 
