@@ -13,7 +13,7 @@ public class MainClass {
    public void getCorrectNumber (){
        Scanner sc = new Scanner(System.in);
        System.out.println("Please, input number from 0 to 9: ");
-       
+       String s = "";
 
    }
 
