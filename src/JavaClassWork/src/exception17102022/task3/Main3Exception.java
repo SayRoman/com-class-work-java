@@ -13,8 +13,8 @@ public class Main3Exception {
         int[] array4 = null;
 
         task3.exceptionInArrays1(array1, 5, 3, array2, 3, 0);
-        task3.exceptionInArrays2(array1, 1, 8, array2, 0, 1);
-        task3.exceptionInArrays3(array3, 0, 0, array4, 0, 0);
+        task3.exceptionInArrays1(array1, 1, 8, array2, 0, 1);
+        task3.exceptionInArrays1(array3, 0, 0, array4, 0, 0);
 
     }
 
@@ -24,23 +24,8 @@ public class Main3Exception {
             Arrays.compare(a, aFromIndex, aToIndex, b, bFromIndex, bToIndex);
         } catch (IllegalArgumentException e) {
             System.out.println("IllegalArgumentException  " + e.getMessage());
-        }
-    }
-
-    public void exceptionInArrays2(int[] a, int aFromIndex, int aToIndex,
-                                   int[] b, int bFromIndex, int bToIndex) {
-        try {
-            Arrays.compare(a, aFromIndex, aToIndex, b, bFromIndex, bToIndex);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("ArrayIndexOutOfBoundsException  " + e.getMessage());
-        }
-
-    }
-
-    public void exceptionInArrays3(int[] a, int aFromIndex, int aToIndex,
-                                   int[] b, int bFromIndex, int bToIndex) {
-        try {
-            Arrays.compare(a, aFromIndex, aToIndex, b, bFromIndex, bToIndex);
         } catch (NullPointerException e) {
             System.out.println("NullPointerException  " + e.getMessage());
         }
