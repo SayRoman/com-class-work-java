@@ -13,11 +13,12 @@ public class MainHashSet {
         set.add(1);
         set.add(45);
         set.add(12);
-        set.add(120);
+        set.add(13);
         set.add(null);
         showArray.showArray(set);
         System.out.println();
 
+        set.add(50);
         set.add(50);
         showArray.showArray(set);
 
