@@ -1,3 +1,5 @@
+package ClassWork.p25082022.src.by.step.class_work.Task1
+
 public class Car {
     private String nameCar;
     private String nameCompany;

@@ -1,5 +1,7 @@
+package ClassWork.p25082022.src.by.step.class_work.Main;
 
 
+import ClassWork.p25082022.src.by.step.class_work.Task4.Calc;
 
 public class MainClassCalc {
     public static void main(String[] args) {

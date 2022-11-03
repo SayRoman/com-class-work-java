@@ -1,3 +1,5 @@
+package ClassWork.p25082022.src.by.step.class_work.Task4;
+
 public class Calc {
 
     public double plus(double x, double y) {
