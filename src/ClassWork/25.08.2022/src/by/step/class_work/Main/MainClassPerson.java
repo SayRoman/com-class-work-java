@@ -1,4 +1,4 @@
-import by.step.class_work.Task1.Person;
+
 
 public class MainClassPerson {
     public static void main(String[] args) {

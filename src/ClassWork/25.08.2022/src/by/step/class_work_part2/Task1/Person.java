@@ -1,6 +1,7 @@
-import by.step.class_work_part2.Task5.Book;
-import by.step.class_work_part2.Task6.Car;
 
+import ClassWork.Interfaces.Car;
+
+import java.awt.print.Book;
 import java.util.Arrays;
 
 public class Person {
@@ -13,8 +14,8 @@ public class Person {
     private String city;
     private String country;
     private String adres;
-    private Book [] countBook;
-    private Car [] countCar;
+    private Book[] countBook;
+    private Car[] countCar;
 
 
     public Person(String firstName, String lastName, String nameFather) {

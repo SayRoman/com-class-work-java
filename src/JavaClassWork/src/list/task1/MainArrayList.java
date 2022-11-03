@@ -1,4 +1,4 @@
-package list.task1;
+package JavaClassWork.src.list.task1;
 
 import java.util.ArrayList;
 import java.util.List;

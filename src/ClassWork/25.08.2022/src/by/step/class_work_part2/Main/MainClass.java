@@ -1,8 +1,8 @@
-import by.step.class_work_part2.Task1.Person;
-import by.step.class_work_part2.Task2.City;
-import by.step.class_work_part2.Task3.Country;
-import by.step.class_work_part2.Task5.Book;
-import by.step.class_work_part2.Task6.Car;
+import ClassWork.Interfaces.Car;
+import ClassWork.Practice.City;
+import ClassWork.Practice.Country;
+
+import java.awt.print.Book;i
 
 public class MainClass {
     public static void main(String[] args) {

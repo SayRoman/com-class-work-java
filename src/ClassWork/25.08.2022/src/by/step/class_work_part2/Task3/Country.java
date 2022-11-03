@@ -1,4 +1,6 @@
-import City;
+
+
+import ClassWork.Practice.City;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -11,7 +13,7 @@ public class Country {
     private int phoneCode = 0;
     private String capital = "";
     private String namesCites = "";
-    private City [] countCities;
+    private City[] countCities;
 
     public Country(String nameCountry, String nameContinent) {
         this.nameCountry = nameCountry;
